@@ -47,10 +47,11 @@ export default {
 
 <style lang="stylus" scoped>
 .header
-  height .76rem
+  height .82rem
   .header-left
     float left
-    width 3.15rem
+    width 42%
+    height .82rem
     .logo
       display inline-block
       vertical-align middle
@@ -67,23 +68,22 @@ export default {
         font-size .12rem
         margin-left -0.06rem
   .header-right
-    width: 3.44rem
-    float right
-    margin-right .91rem
+    position relative
+    float left
+    height .82rem
     .header-tab
       display inline-block
       vertical-align middle
-      line-height .7rem
+      line-height .82rem
       color #777
       text-align center
-      padding 0 .28rem
+      padding 0 .33rem
     .navactive
       color #ff4d64
     .move
-      display inline-block
-      position relative
-      bottom .18rem
-      width 1.68rem
+      position absolute
+      bottom 0
+      width 1.78rem
       border-bottom .06rem solid #ff4d64
       -webkit-transition left 0.7s ease-in-out
       transition left 0.7s ease-in-out
