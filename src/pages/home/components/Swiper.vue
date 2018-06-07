@@ -1,5 +1,5 @@
 <template>
-  <swiper :options="swiperOption" class="wrapper" ref="mySwiper">
+  <swiper :options="swiperOption" class="wrapper">
     <swiper-slide v-for="item of swiperList" :key="item.id">
       <img class="swiper-img" :src="item.imgUrl" />
     </swiper-slide>
@@ -15,6 +15,7 @@ export default {
       swiperOption: {
         loop: true,
         autoplay: 2500,
+        autoplayDisableOnInteraction: false,
         speed: 500,
         pagination: '.swiper-pagination'
       },
@@ -34,7 +35,7 @@ export default {
 
 <style lang="stylus" scoped>
 .wrapper >>> .swiper-pagination-bullet-active
-  background  #ffffff !important
+  background  #ffffff
 .wrapper >>> .swiper-pagination-bullet
   width 4px
   height 4px
