@@ -1,8 +1,8 @@
 <template>
     <div class="list">
       <ul class="list-info">
-        <li class="item" v-for="item of list" :key="item.id">
-          <div class="item-info border-bottom">
+        <li class="item">
+          <div class="item-info border-bottom" v-for="item of list" :key="item.id">
               <img class="m-img" :src="item.imgUrl" />
               <a class="m-info">
                 <div class="title">
@@ -49,7 +49,7 @@
 
 <script>
 export default {
-  name: 'HomeList',
+  name: 'HomeListHot',
   data () {
     return {
       list: [{
@@ -107,10 +107,48 @@ export default {
         actor: '         主演：小罗伯特·唐尼 克里斯·海姆斯沃斯       ',
         buynow: true,
         hotshow: false
+      }, {
+        id: '0005',
+        imgUrl: 'https://gw.alicdn.com/i4/TB1xcwSheySBuNjy1zdXXXPxFXa_.jpg_160x160Q30s100.jpg',
+        name: '复仇者联盟3：无限战争',
+        styleshow: true,
+        hdr: '3D',
+        lbl: 'IMAX',
+        shownow: true,
+        score: '8.8',
+        director: '         导演：安东尼·罗素  乔·罗素       ',
+        actor: '         主演：小罗伯特·唐尼 克里斯·海姆斯沃斯       ',
+        buynow: true,
+        hotshow: false
+      }, {
+        id: '0006',
+        imgUrl: 'https://gw.alicdn.com/i4/TB1xcwSheySBuNjy1zdXXXPxFXa_.jpg_160x160Q30s100.jpg',
+        name: '复仇者联盟3：无限战争',
+        styleshow: true,
+        hdr: '3D',
+        lbl: 'IMAX',
+        shownow: true,
+        score: '8.8',
+        director: '         导演：安东尼·罗素  乔·罗素       ',
+        actor: '         主演：小罗伯特·唐尼 克里斯·海姆斯沃斯       ',
+        buynow: true,
+        hotshow: false
+      }, {
+        id: '0007',
+        imgUrl: 'https://gw.alicdn.com/i4/TB1xcwSheySBuNjy1zdXXXPxFXa_.jpg_160x160Q30s100.jpg',
+        name: '复仇者联盟3：无限战争',
+        styleshow: true,
+        hdr: '3D',
+        lbl: 'IMAX',
+        shownow: true,
+        score: '8.8',
+        director: '         导演：安东尼·罗素  乔·罗素       ',
+        actor: '         主演：小罗伯特·唐尼 克里斯·海姆斯沃斯       ',
+        buynow: true,
+        hotshow: false
       }]
     }
   }
-
 }
 </script>
 
@@ -120,8 +158,6 @@ export default {
   position relative
   padding-left .32rem
   background #ffffff
-  .border-bottom
-    border-bottom  .01rem solid #e5e5e5
   .item-info
     display flex
     padding .32rem .32rem .32rem 0
