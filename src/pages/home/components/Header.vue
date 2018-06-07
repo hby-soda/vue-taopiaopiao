@@ -36,10 +36,12 @@ export default {
     handleClickHot () {
       this.navactive = true
       this.moveDistance = '0%'
+      this.$emit('change', this.navactive)
     },
     handleClickComming () {
       this.navactive = false
       this.moveDistance = '50%'
+      this.$emit('change', this.navactive)
     }
   }
 }
